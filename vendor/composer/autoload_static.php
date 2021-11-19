@@ -15,6 +15,10 @@ class ComposerStaticInita893e05b969b9da0feb87efdc4b2599e
         array (
             'setasign\\Fpdi\\' => 14,
         ),
+        'i' => 
+        array (
+            'iio\\libmergepdf\\' => 16,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -34,6 +38,10 @@ class ComposerStaticInita893e05b969b9da0feb87efdc4b2599e
         'setasign\\Fpdi\\' => 
         array (
             0 => __DIR__ . '/..' . '/setasign/fpdi/src',
+        ),
+        'iio\\libmergepdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/iio/libmergepdf/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -55,6 +63,26 @@ class ComposerStaticInita893e05b969b9da0feb87efdc4b2599e
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Datamatrix' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/datamatrix.php',
+        'FPDF' => __DIR__ . '/..' . '/rafikhaceb/tcpdi/tcpdi.php',
+        'FPDF_TPL' => __DIR__ . '/..' . '/rafikhaceb/tcpdi/fpdf_tpl.php',
+        'Jurosh\\PDFMerge\\PDFMerger' => __DIR__ . '/..' . '/jurosh/pdf-merge/src/Jurosh/PDFMerge/PDFMerger.php',
+        'Jurosh\\PDFMerge\\PdfObject' => __DIR__ . '/..' . '/jurosh/pdf-merge/src/Jurosh/PDFMerge/PDFObject.php',
+        'PDF417' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/pdf417.php',
+        'QRcode' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/qrcode.php',
+        'TCPDF' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf.php',
+        'TCPDF2DBarcode' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_barcodes_2d.php',
+        'TCPDFBarcode' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_barcodes_1d.php',
+        'TCPDF_COLORS' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_colors.php',
+        'TCPDF_FILTERS' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_filters.php',
+        'TCPDF_FONTS' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_fonts.php',
+        'TCPDF_FONT_DATA' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_font_data.php',
+        'TCPDF_IMAGES' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_images.php',
+        'TCPDF_IMPORT' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_import.php',
+        'TCPDF_PARSER' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_parser.php',
+        'TCPDF_STATIC' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_static.php',
+        'TCPDI' => __DIR__ . '/..' . '/rafikhaceb/tcpdi/tcpdi.php',
+        'tcpdi_parser' => __DIR__ . '/..' . '/rafikhaceb/tcpdi/tcpdi_parser.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

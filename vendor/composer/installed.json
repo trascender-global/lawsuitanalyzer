@@ -1,6 +1,111 @@
 {
     "packages": [
         {
+            "name": "iio/libmergepdf",
+            "version": "4.0.0",
+            "version_normalized": "4.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hanneskod/libmergepdf.git",
+                "reference": "46a0611f8a5421780ba181c57b9c32d1ac0d2ffc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hanneskod/libmergepdf/zipball/46a0611f8a5421780ba181c57b9c32d1ac0d2ffc",
+                "reference": "46a0611f8a5421780ba181c57b9c32d1ac0d2ffc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "rafikhaceb/tcpdi": "^1",
+                "setasign/fpdi-tcpdf": "^2.0"
+            },
+            "require-dev": {
+                "smalot/pdfparser": "~0.13"
+            },
+            "time": "2018-11-16T10:47:33+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "iio\\libmergepdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Hannes Forsgård",
+                    "email": "hannes.forsgard@fripost.org"
+                }
+            ],
+            "description": "Library for merging multiple PDFs",
+            "homepage": "https://github.com/hanneskod/libmergepdf",
+            "keywords": [
+                "merge",
+                "pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/hanneskod/libmergepdf/issues",
+                "source": "https://github.com/hanneskod/libmergepdf/tree/master"
+            },
+            "install-path": "../iio/libmergepdf"
+        },
+        {
+            "name": "jurosh/pdf-merge",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jurosh/php-pdf-merge.git",
+                "reference": "89ba3446c9f38c573e3b8bf577d2f22993494130"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jurosh/php-pdf-merge/zipball/89ba3446c9f38c573e3b8bf577d2f22993494130",
+                "reference": "89ba3446c9f38c573e3b8bf577d2f22993494130",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20",
+                "setasign/fpdf": "^1.8",
+                "setasign/fpdi": "^2.3"
+            },
+            "time": "2021-03-28T19:57:14+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "src/Jurosh/PDFMerge/PDFMerger.php",
+                    "src/Jurosh/PDFMerge/PDFObject.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Juraj Husar",
+                    "email": "jurosh@jurosh.com",
+                    "homepage": "http://jurosh.com"
+                }
+            ],
+            "description": "PHP PDF Merger",
+            "homepage": "https://github.com/jurosh/php-pdf-merge",
+            "keywords": [
+                "merge",
+                "pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/jurosh/php-pdf-merge/issues",
+                "source": "https://github.com/jurosh/php-pdf-merge/tree/remove"
+            },
+            "install-path": "../jurosh/pdf-merge"
+        },
+        {
             "name": "mpdf/mpdf",
             "version": "v8.0.11",
             "version_normalized": "8.0.11.0",
@@ -325,6 +430,107 @@
             "install-path": "../psr/log"
         },
         {
+            "name": "rafikhaceb/tcpdi",
+            "version": "1.0.4",
+            "version_normalized": "1.0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RafikHaceb/tcpdi.git",
+                "reference": "b2393792b94741f7f9eb359b06576507f74ef6de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RafikHaceb/tcpdi/zipball/b2393792b94741f7f9eb359b06576507f74ef6de",
+                "reference": "b2393792b94741f7f9eb359b06576507f74ef6de",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "tecnickcom/tcpdf": "6.2.*"
+            },
+            "time": "2021-08-06T08:45:02+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "fpdf_tpl.php",
+                    "tcpdi.php",
+                    "tcpdi_parser.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "homepage": "http://nicolaasuni.tecnick.com"
+                }
+            ],
+            "description": "TCPDI is a PHP class for importing PDF to use with TCPDF",
+            "keywords": [
+                "TCPDF",
+                "pdf",
+                "tcpdi",
+                "tcpdi_parser"
+            ],
+            "support": {
+                "source": "https://github.com/RafikHaceb/tcpdi/tree/1.0.4"
+            },
+            "install-path": "../rafikhaceb/tcpdi"
+        },
+        {
+            "name": "setasign/fpdf",
+            "version": "1.8.3",
+            "version_normalized": "1.8.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Setasign/FPDF.git",
+                "reference": "6a83253ece0df1c5b6c05fe7a900c660ae38afc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Setasign/FPDF/zipball/6a83253ece0df1c5b6c05fe7a900c660ae38afc3",
+                "reference": "6a83253ece0df1c5b6c05fe7a900c660ae38afc3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "ext-zlib": "*"
+            },
+            "time": "2021-04-20T09:49:57+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "fpdf.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Olivier Plathey",
+                    "email": "oliver@fpdf.org",
+                    "homepage": "http://fpdf.org/"
+                }
+            ],
+            "description": "FPDF is a PHP class which allows to generate PDF files with pure PHP. F from FPDF stands for Free: you may use it for any kind of usage and modify it to suit your needs.",
+            "homepage": "http://www.fpdf.org",
+            "keywords": [
+                "fpdf",
+                "pdf"
+            ],
+            "support": {
+                "source": "https://github.com/Setasign/FPDF/tree/1.8.3"
+            },
+            "install-path": "../setasign/fpdf"
+        },
+        {
             "name": "setasign/fpdi",
             "version": "v2.3.6",
             "version_normalized": "2.3.6.0",
@@ -398,6 +604,121 @@
                 }
             ],
             "install-path": "../setasign/fpdi"
+        },
+        {
+            "name": "setasign/fpdi-tcpdf",
+            "version": "v2.2.0",
+            "version_normalized": "2.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Setasign/FPDI-TCPDF.git",
+                "reference": "95778baea02e5da76acb9f6dc1c946be380a22d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Setasign/FPDI-TCPDF/zipball/95778baea02e5da76acb9f6dc1c946be380a22d8",
+                "reference": "95778baea02e5da76acb9f6dc1c946be380a22d8",
+                "shasum": ""
+            },
+            "require": {
+                "setasign/fpdi": "^2.2",
+                "tecnickcom/tcpdf": "^6.2"
+            },
+            "time": "2019-01-30T14:39:33+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Slabon",
+                    "email": "jan.slabon@setasign.com",
+                    "homepage": "https://www.setasign.com"
+                }
+            ],
+            "description": "Kind of metadata package for dependencies of the latest versions of FPDI and TCPDF.",
+            "homepage": "https://www.setasign.com/fpdi",
+            "keywords": [
+                "TCPDF",
+                "fpdi",
+                "pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/Setasign/FPDI-TCPDF/issues",
+                "source": "https://github.com/Setasign/FPDI-TCPDF/tree/master"
+            },
+            "abandoned": true,
+            "install-path": "../setasign/fpdi-tcpdf"
+        },
+        {
+            "name": "tecnickcom/tcpdf",
+            "version": "6.2.26",
+            "version_normalized": "6.2.26.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tecnickcom/TCPDF.git",
+                "reference": "367241059ca166e3a76490f4448c284e0a161f15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/367241059ca166e3a76490f4448c284e0a161f15",
+                "reference": "367241059ca166e3a76490f4448c284e0a161f15",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2018-10-16T17:24:05+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "config",
+                    "include",
+                    "tcpdf.php",
+                    "tcpdf_parser.php",
+                    "tcpdf_import.php",
+                    "tcpdf_barcodes_1d.php",
+                    "tcpdf_barcodes_2d.php",
+                    "include/tcpdf_colors.php",
+                    "include/tcpdf_filters.php",
+                    "include/tcpdf_font_data.php",
+                    "include/tcpdf_fonts.php",
+                    "include/tcpdf_images.php",
+                    "include/tcpdf_static.php",
+                    "include/barcodes/datamatrix.php",
+                    "include/barcodes/pdf417.php",
+                    "include/barcodes/qrcode.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
+            "homepage": "http://www.tcpdf.org/",
+            "keywords": [
+                "PDFD32000-2008",
+                "TCPDF",
+                "barcodes",
+                "datamatrix",
+                "pdf",
+                "pdf417",
+                "qrcode"
+            ],
+            "support": {
+                "source": "https://github.com/tecnickcom/TCPDF/tree/master"
+            },
+            "install-path": "../tecnickcom/tcpdf"
         }
     ],
     "dev": true,

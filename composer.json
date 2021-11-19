@@ -1,6 +1,16 @@
 {
     "require": {
         "mpdf/mpdf": "^8.0",
-        "phpmailer/phpmailer": "^6.4"
-    }
+        "phpmailer/phpmailer": "^6.4",
+        "iio/libmergepdf": "4.0",
+        "jurosh/pdf-merge": "^2.1",
+        "setasign/setapdf-merger_eval_ioncube_php7.1": "2.38.3.1663",
+        "setasign/setapdf-stamper_eval_ioncube_php7.1": "2.38.3.1663"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://www.setasign.com/downloads/"
+        }
+    ]
 }
