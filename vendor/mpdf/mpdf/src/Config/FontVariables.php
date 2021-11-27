@@ -25,7 +25,7 @@ class FontVariables
 			// only works using subsets (otherwise would add very large file)
 			// More than 1 font can be specified but each will add to the processing time of the script
 
-			'backupSubsFont' => ['dejavusanscondensed', 'freesans', 'sun-exta'],
+			'backupSubsFont' => ['dejavusanscondensed', 'freesans', 'sun-exta','Montserrat'],
 
 			// Optionally set a font (name as defined below in 'fontdata') to use for CJK characters
 			// in Plane 2 Unicode (> U+20000) when using useSubstitutions.
@@ -93,6 +93,11 @@ class FontVariables
 			 */
 
 			'fontdata' => [
+				"montserrat" => [
+					'R' => "Montserrat-Regular.ttf",
+					'M' => "Montserrat-Medium.ttf",
+					'B' => "Montserrat-SemiBold.ttf",
+				],				
 				"dejavusanscondensed" => [
 					'R' => "DejaVuSansCondensed.ttf",
 					'B' => "DejaVuSansCondensed-Bold.ttf",

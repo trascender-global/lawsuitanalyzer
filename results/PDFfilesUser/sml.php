@@ -17,10 +17,10 @@
         $license = $_SESSION['lk'];
         require '../../vendor/autoload.php';
         require_once('../../vendor/SetaPDF/Autoload.php');    
-        $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => [215.9, 279.4]]);
+        $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => [215.9, 279.4],'default_font_size' => 12,'default_font' => 'montserrat']);
         $mpdf->SetHTMLFooter('<div>
                                     <div style="width:100%; border-top: 2px solid; border-top-color: #547391; margin-bottom: 0px;"></div>
-                                    <p style="margin-top: 0px; font-size: small;">Lawsuit Analyzer© results are projections based on your input, not legal advice. The objective of this assessment is to introduce you to some legal reasoning that may or may not apply to your dispute, to be used as a reference tool, not as a determination.
+                                    <p style="margin-top: 0px; font-size: small;font-family: montserrat;">Lawsuit Analyzer© results are projections based on your input, not legal advice. The objective of this assessment is to introduce you to some legal reasoning that may or may not apply to your dispute, to be used as a reference tool, not as a determination.
                                     </p>
                                 </div>
                             ');
