@@ -1198,7 +1198,7 @@
             <div class="row" style="margin: 0px;">
                 <div class="col" style="text-align: center;">
                     <div style="width:100%; border-top: 2.5px solid; border-top-color: #547391;margin-top: 2%;margin-bottom: 1%;"></div>
-                    <p style="color: #547391; font-size: 1.5rem; font-weight: bold;">PHASE 5: Comprehensive Case Analysis</p>
+                    <p style="color: #547391; font-size: 1.5rem; font-weight: bold;font-size: 24px;">PHASE 5: Comprehensive Case Analysis</p>
                     <div style="width:100%; border-top: 2.5px solid; border-top-color: #547391;margin-top: 1%;margin-bottom: 2%;"></div>
                 </div>
             </div>
@@ -1210,24 +1210,24 @@
                 <table>
                     <thead style="color: #547391;">
                         <tr>
-                            <th colspan="2" scope="col" style="text-align: left; font-weight: bold;"> <p style="color: #547391;">Results Carried Forward:</p> </th>
+                            <th colspan="2" scope="col" style="text-align: left; font-weight: bold;font-size: 19px;"> <p style="color: #547391;">Results Carried Forward:</p> </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td > Phase 1, Legal Evaluation [Range: 0 or 350]...................................................................</td>
+                            <td > Phase 1, Legal Evaluation <span style="font-size: 14px;" >[Range: 0 or 350]</span>........................................................................</td>
                             <td id="tbl-row-1-result"></td>   
                         </tr>
                         <tr>
-                            <td >Phase 2, Damage Assessment [Range: 5-50]................................................................</td>
+                            <td >Phase 2, Damage Assessment <span style="font-size: 14px;" >[Range: 5-50]</span>....................................................................</td>
                             <td id="tbl-row-3-result"></td>   
                         </tr>
                         <tr>
-                            <td >Phase 3, Legal Options Assessment [Range: 0-190].................................................</td>
+                            <td >Phase 3, Legal Options Assessment <span style="font-size: 14px;" >[Range: 0-190]</span>.....................................................</td>
                             <td id="tbl-row-4-result"></td>   
                         </tr>
                         <tr>
-                            <td >Phase 4, Collectability Assessment [Range 20-150]..................................................</td>
+                            <td >Phase 4, Collectability Assessment <span style="font-size: 14px;" >[Range 20-150]</span>......................................................</td>
                             <td id="tbl-row-5-result"></td>
                         </tr>
                     </tbody>
@@ -1236,12 +1236,12 @@
                 <table>
                     <thead style="color: #547391;">                         
                         <tr>
-                            <th colspan="2" scope="col" style="text-align: left;font-weight: bold;"><p style="color: #547391;">Comprehensive Case Assessment:</p></th>
+                            <th colspan="2" scope="col" style="text-align: left;font-weight: bold;font-size: 19px;"><p style="color: #547391;">Comprehensive Case Assessment:</p></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Case Feasibility Assessment [Range 4-100%]................................................................</td>
+                            <td>Case Feasibility Assessment <span style="font-size: 14px;" >[Range 4-100%]</span>....................................................................</td>
                             <td id="tbl-row-6-result"></td>   
                         </tr>                                                            
                         <tr>
@@ -2353,6 +2353,13 @@
             StepResultText1 = 'You have received ' + DataForm[2]['Values'][37] + ' points ';
             StepResultText2 = 'out of 190';
             StepResultText3 = 'This result is part of an algorithm that will be factored into your Comprehensive Case Analysis in Phase 5';
+            //Refresh Phase 6 Results from Phase 3
+            $('#ResultStep6').html('<p style = "font-weight: bold;" > '+  DataForm[5]['Values'][51] + ' out of 100%');
+            $('#ResultStep7_1').text( DataForm[6]['Values'][57] );
+            $('#ResultStep7_2').text( DataForm[6]['Values'][53] );
+            //Results for email
+            $('#ResultStep7_1-result').text( $('#ResultStep7_1').text() );
+            $('#ResultStep7_2-result').text( $('#ResultStep7_2').text() );
         };
         if ( Step == 'Step4') {
             GetStepsData();
@@ -2376,10 +2383,10 @@
             $('#tbl-row-9').text('$' + SeparadorMiles(DataForm[4]['Values'][42]) );
             $('#tbl-row-10').text( '$' + SeparadorMiles(Math.round(DataForm[4]['Values'][49])) );
             //Results for email
-            $('#tbl-row-1-result').text($('#tbl-row-1').text() + ' points');
-            $('#tbl-row-3-result').text($('#tbl-row-3').text() + ' points');
-            $('#tbl-row-4-result').text($('#tbl-row-4').text() + ' points');
-            $('#tbl-row-5-result').text($('#tbl-row-5').text() + ' points');
+            $('#tbl-row-1-result').html($('#tbl-row-1').text() + '<span style="font-size: 14px;"> points</span>')
+            $('#tbl-row-3-result').html($('#tbl-row-3').text() + '<span style="font-size: 14px;"> points</span>');
+            $('#tbl-row-4-result').html($('#tbl-row-4').text() + '<span style="font-size: 14px;"> points</span>');
+            $('#tbl-row-5-result').html($('#tbl-row-5').text() + '<span style="font-size: 14px;"> points</span>');
             $('#tbl-row-6-result').text($('#tbl-row-6').text()); //Blank Space
             $('#tbl-row-7-result').text($('#tbl-row-7').text());
             $('#tbl-row-8-result').text($('#tbl-row-8').text());

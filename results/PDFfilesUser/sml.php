@@ -20,7 +20,7 @@
         $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => [215.9, 279.4],'default_font_size' => 12,'default_font' => 'montserrat']);
         $mpdf->SetHTMLFooter('<div>
                                     <div style="width:100%; border-top: 2px solid; border-top-color: #547391; margin-bottom: 0px;"></div>
-                                    <p style="margin-top: 0px; font-size: small;font-family: montserrat;">Lawsuit Analyzer© results are projections based on your input, not legal advice. The objective of this assessment is to introduce you to some legal reasoning that may or may not apply to your dispute, to be used as a reference tool, not as a determination.
+                                    <p style="margin-top: 0px; font-size: 12px;font-family: montserrat;">Lawsuit Analyzer© results are projections based on your input, not legal advice. The objective of this assessment is to introduce you to some legal reasoning that may or may not apply to your dispute, to be used as a reference tool, not as a determination.
                                     </p>
                                 </div>
                             ');
@@ -97,8 +97,9 @@
 
         for ($i = 1; $i <= $pages->count(); $i++) {
             $stamper = new SetaPDF_Stamper($document);
-            $font = SetaPDF_Core_Font_Standard_TimesRoman::create($document);
-            $stamp = new SetaPDF_Stamper_Stamp_Text($font, 10);
+            //$font = SetaPDF_Core_Font_Standard_TimesRoman::create($document);
+            $font = new SetaPDF_Core_Font_TrueType_Subset($document, "../../vendor/mpdf/mpdf/ttfonts/Montserrat-Medium.ttf" ); 
+            $stamp = new SetaPDF_Stamper_Stamp_Text($font, 9);
             $stamp->setAlign(SetaPDF_Core_Text::ALIGN_CENTER);
             $stamp->setText( $i . ' of ' . $pages->count());
             $stamper->addStamp($stamp, array(
@@ -124,6 +125,7 @@
         // call merge, output format `file`
         $pdf_merger->merge('file', "../Lawsuit_Analyzer_Results-" . $license . ".pdf");
         */
+
 
         $mail = new PHPMailer(true);
         //Recipients
